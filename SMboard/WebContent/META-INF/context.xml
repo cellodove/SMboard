@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DBCP 정보를 저장한다. -->
+<Context>
+	<Resource name="jdbc" auth="Container"
+		type="javax.sql.DataSource"
+		driverClassName="oracle.jdbc.driver.OracleDriver"
+		factory="org.apache.commons.dbcp2.BasicDataSourceFactory"
+		url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="scott"
+		password="tiger" maxActive="500" maxIdle="100" maxWait="5000"
+		removeAbandoned="true" testOnBorrow="true" />
+</Context>
